@@ -1,20 +1,20 @@
 body{
-    font-size: 12px;
     display: flex;
     flex-direction: column;
-    background-color: dimgray;
+    font-size: 12px;
+    background-color: lightblue;
 }
 header {
-    line-height: 200%;
     font-size: 32px;
     border-bottom: 10px solid green;
-    padding: 20px 20px 40px 20px;
+    padding: 20px;
     background-color:dimgrey;
 }
 h1{
     display: inline-block;
     border: 1px solid blue;
     padding-left: 100px;
+    line-height: 200%;
     padding-right: 5px;
     margin-left: -25px;
     background-color:lightblue;
@@ -22,17 +22,95 @@ h1{
 }
 .navigation-bar {
     padding: 10px;
-    float: right;
+    margin-top: -60px;
 
 }
-li{
+.navigation-bar ul{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.navigation-bar ul li{
+    
     padding: 10px;
     display: inline;
     border-bottom: 3px solid blue;
     color:white;
+    margin-left: 10px;
 
 }
 a{
     text-decoration: none;
     color: black;
+    text-align: center;
 }
+.section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 20px;
+    height: 30%;
+    
+}
+h2{
+    flex:1;
+    width: 250px;
+    font-size: 50px;
+    border-right:  solid;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-2{
+    flex: 4;
+    padding: 20px;
+    margin-left: 20px;
+}
+#about-descr{
+    margin-left: 50px;
+    font-size: 20px;
+}
+img{
+    width: 50%;
+    padding: 5px;
+}
+
+#work-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#main-img{
+    width: 80%;
+}
+#other-imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+}
+.contact-info li{
+    font-size: 32px;
+    margin-left: 100px;
+    padding: 10px;
+    border-bottom: 3px solid blue;
+}
+#contacts{
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 890px) {
+    .navigation-bar{
+        margin-top: 0px;
+    }
+    .navigation-bar ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
